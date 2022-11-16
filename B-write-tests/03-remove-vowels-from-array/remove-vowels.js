@@ -1,15 +1,15 @@
-function removeVowels(word) {
+function removeVowels(word) {    
   let characters = word.split("");
 
   let result = [];
 
   characters.forEach(function (character) {
     if (
-      character !== "a" &&
-      character !== "o" &&
-      character !== "i" &&
-      character !== "e" &&
-      character !== "u"
+      character !== "a" && character !== "A" &&
+      character !== "o" && character !== "O" &&
+      character !== "i" && character !== "I" &&
+      character !== "e" && character !== "E" &&
+      character !== "u" && character !== "U"
     ) {
       result.push(character);
     }
@@ -18,7 +18,8 @@ function removeVowels(word) {
   return result.join("");
 }
 
-console.log(removeVowels('samuel'))
+
+
 module.exports = removeVowels;
 
 /*

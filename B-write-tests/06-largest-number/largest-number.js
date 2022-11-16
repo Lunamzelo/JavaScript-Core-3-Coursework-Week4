@@ -1,11 +1,9 @@
 function getLargestNumber(array) {
-  let largestNumber;
-  for (let i = 0; i < array.length - 1; i++) {
-    if (array[i] > array[i + 1]) {
-      largestNumber = array[i];
-    }
-  }
-  return largestNumber;
+  array.sort((a,b)=>{
+    return a-b
+  })
+  return array[array.length-1]
+  
 }
 
 module.exports = getLargestNumber;

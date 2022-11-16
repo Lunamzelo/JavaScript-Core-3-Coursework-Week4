@@ -1,4 +1,4 @@
-const verify = require("./password-verifier");
+const verify = require("./password");
 
 /*  */
 
